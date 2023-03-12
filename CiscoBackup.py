@@ -6,9 +6,9 @@ import os
 from datetime import date
 from getpass import getpass
 from netmiko import ConnectHandler
-from netmiko.ssh_exception import NetMikoTimeoutException
-from paramiko.ssh_exception import SSHException
-from netmiko.ssh_exception import AuthenticationException
+from netmiko.exceptions import NetMikoTimeoutException
+from netmiko.exceptions import SSHException
+from netmiko.exceptions import AuthenticationException
 
 username = input('Enter your SSH username: ')
 password = getpass()
